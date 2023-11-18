@@ -14,9 +14,9 @@ class Person {
     }
 }
 abstract class House {
-    door: boolean;
+    door: boolean = false;
     key: Key;
-    tenants: Person[];
+    tenants: Person[] = [];
     
     comeIn(person: Person) {
         if (this.door)  
